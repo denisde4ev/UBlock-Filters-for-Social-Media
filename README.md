@@ -41,7 +41,7 @@ This tool offers a simple yet effective way to boost productivity. It is fully c
       <td>
         <ul>
           <li>Home Feed</li>
-          <li>YouTube Shorts (filter list from <a href="https://github.com/gijsdev/ublock-hide-yt-shorts">gijsdev/ublock-hide-yt-shorts</a>)</li>
+          <li>(DISABLED) YouTube Shorts (filter list from <a href="https://github.com/gijsdev/ublock-hide-yt-shorts">gijsdev/ublock-hide-yt-shorts</a>)</li>
           <li>Video recommendations next to the videos</li>
           <li>Video recommendations at the end of a video screen</li>
         </ul>
