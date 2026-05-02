@@ -7,6 +7,11 @@
 
 ! ----- YOUTUBE FILTERS -----
 
+!! @denisde4ev hide algorythum based shorts+home buttons
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^(Shorts|Home)$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts|Home$/i))
+
+
 !! ! Homepage: https://github.com/gijsdev/ublock-hide-yt-shorts
 !! 
 !! ! desktop
