@@ -7,13 +7,15 @@
 
 ! ----- YOUTUBE FILTERS -----
 
-!! @denisde4ev hide algorythum based shorts+home buttons
-www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^(Shorts|Home)$/i))
-www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts|Home$/i))
+! @denisde4ev hide algorythum based shorts+home buttons
+!! www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^(Shorts|Home)$/i))
+!! www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts|Home$/i))
+
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:nth-of-type(1) ytd-guide-entry-renderer:is(:nth-child(1),:nth-child(2))
 
 
 !! ! Homepage: https://github.com/gijsdev/ublock-hide-yt-shorts
-!! 
+!!
 !! ! desktop
 !! www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
 !! www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
@@ -32,7 +34,7 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Sho
 !! www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
 !! www.youtube.com##.shelf-header-layout-wiz__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
 !! www.youtube.com##.yt-shelf-header-layout__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
-!!   
+!!
 !! ! mobile
 !! m.youtube.com##ytm-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
 !! m.youtube.com##ytm-item-section-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
@@ -43,7 +45,7 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Sho
 !! m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts.?Remix.*$/i))
 !! m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
 !! m.youtube.com##ytm-reel-shelf-renderer:has(ytm-shorts-lockup-view-model)
-!! 
+!!
 !! ! End of gijsdev/ublock-hide-yt-shorts filter list
 
 www.youtube.com##.ytp-show-tiles.videowall-endscreen.ytp-player-content.html5-endscreen
